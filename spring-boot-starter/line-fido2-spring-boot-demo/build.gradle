@@ -30,8 +30,8 @@ dependencies {
     implementation('org.springframework.boot:spring-boot-starter-web')
     implementation project(':spring-boot-starter:line-fido2-spring-boot-starter')
 
-    compileOnly 'org.projectlombok:lombok:1.18.18'
-    annotationProcessor 'org.projectlombok:lombok:1.18.18'
+    compileOnly 'org.projectlombok:lombok:1.18.20'
+    annotationProcessor 'org.projectlombok:lombok:1.18.20'
 
     //logging
     implementation('org.zalando:logbook-spring-boot-starter:1.8.1')
@@ -39,10 +39,10 @@ dependencies {
     //local redis
     implementation('com.github.kstyrc:embedded-redis:0.6')
 
-    runtime ('mysql:mysql-connector-java')
+    runtimeOnly ('mysql:mysql-connector-java')
 
     //local db
-    runtime('com.h2database:h2')
+    runtimeOnly('com.h2database:h2')
 
     //bouncy castle
     implementation('org.bouncycastle:bcprov-jdk15on:1.60')
